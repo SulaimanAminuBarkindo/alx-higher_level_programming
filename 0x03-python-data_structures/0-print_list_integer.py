@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-''' prints integer list one number in a line'''
 def print_list_integer(my_list=[]):
-    for number in my_list:
-        print("{}".format(number))
+    """Print all integers of a list."""
+    for i in range(len(my_list)):
+        print("{:d}".format(my_list[i]))
