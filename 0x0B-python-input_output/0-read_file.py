@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""defines function to read text file and prints to stdout"""
+"""Module contains a function that reads a text file"""
 
 
 def read_file(filename=""):
-    """reads text file and prints to stdout"""
-    with open(filename) as f:
-        print(f.read(), end="")
+    """Reads txt file and prints it to stdout"""
+    with open(filename) as file_object:
+        contents = file_object.read()
+        print(contents, end="")
